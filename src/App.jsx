@@ -152,7 +152,7 @@ function App() {
         
         try {
           const response = await axios.post(
-            "https://hand-sign-detection-backend-f895.onrender.com/detect_from_image",
+            "https://hand-sign-detection-backend-gyqg.onrender.com",
             formData,
             {
               headers: {
@@ -185,7 +185,7 @@ function App() {
     if (isDetecting && !webcamActive && !showUpload) {
       interval = setInterval(() => {
         axios
-          .get("https://hand-sign-detection-backend-f895.onrender.com/detect")
+          .get("https://hand-sign-detection-backend-gyqg.onrender.com")
           .then((response) => {
             if (response.data.alphabet) {
               setAlphabet(response.data.alphabet);
@@ -333,7 +333,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "https://hand-sign-detection-backend-f895.onrender.com/detect_from_image",
+        "https://hand-sign-detection-backend-gyqg.onrender.com",
         formData,
         {
           headers: {
