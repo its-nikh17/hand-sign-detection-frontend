@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+html { scroll-behavior: smooth; }
+::selection { background: rgba(184,255,106,.25); color: #f4f7f5; }
